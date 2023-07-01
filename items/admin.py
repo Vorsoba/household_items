@@ -10,7 +10,4 @@ class ItemsAdmin(admin.ModelAdmin):
     # list_display = ['name', 'lifetime', 'price']   model retur)
     readonly_fields = ['name', 'depreciation', 'lifetime', 'price', 'id']
 
-'''    def depreciation(self, obj):
-        if obj.price is None:
-            return 0
-        return round(obj.price / 12, 2)'''
+
